@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context="com.example.daniele.webviewmockup.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter mockup URL:" />
+
+    <EditText
+        android:id="@+id/mockupURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="(without http://)"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter zoom level:" />
+
+    <EditText
+        android:id="@+id/zoomLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="This is usually resolution width or less"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/loadMockup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadMockup"
+        android:text="Load Mockup" />
+</LinearLayout>
